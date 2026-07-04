@@ -1,0 +1,25 @@
+{
+  "name": "hub-leitura-teste-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --browser chrome",
+    "cy:report": "npx cypress run --browser chrome --record --key 74ded62a-6f1b-405b-9fdc-17ee82584ddf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danilooliveira144/hub-leitura-teste-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/danilooliveira144/hub-leitura-teste-ui/issues"
+  },
+  "homepage": "https://github.com/danilooliveira144/hub-leitura-teste-ui#readme",
+  "devDependencies": {
+    "cypress": "^15.18.0"
+  }
+}
