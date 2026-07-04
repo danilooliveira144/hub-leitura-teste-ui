@@ -1,0 +1,24 @@
+class CadastroPage {
+    visitarPaginaCadastro() {
+        cy.visit('register.html')
+    }
+
+    campoNome() {return cy.get('#name')}
+    campoEmail() {return cy.get('#email')}
+    campoTelefone() {return cy.get('#phone')}
+    campoSenha() {return cy.get('#password')}
+    campoConfirmarSenha() {return cy.get('#confirm-password')}
+    checkTermos() {return cy.get('#terms-agreement')}
+    botaoCadastrar() {return cy.get('#register-btn')}
+
+    preencherCadastro(nome, email, telefone, senha, confirmarSenha) {
+        this.campoNome().clear().type(nome)
+        this.campoEmail().clear().type(email)
+        this.campoTelefone().clear().type(telefone)
+        this.campoSenha().clear().type(senha)
+        this.campoConfirmarSenha().clear().type(confirmarSenha)
+        this.checkTermos().check()
+        this.botaoCadastrar().click()
+    }
+}
+export default new CadastroPage()
